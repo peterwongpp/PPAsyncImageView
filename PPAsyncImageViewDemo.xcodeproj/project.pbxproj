@@ -25,6 +25,7 @@
 		D664265A18839A6A00E5E378 /* PPImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D664265918839A6A00E5E378 /* PPImageLoader.m */; };
 		D66426641883C80A00E5E378 /* PPImageDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D66426631883C80A00E5E378 /* PPImageDataDownloader.m */; };
 		D66426671883D33000E5E378 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D66426661883D33000E5E378 /* NSString+MD5.m */; };
+		D664266A1883EA1800E5E378 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D66426691883EA1800E5E378 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		D66426651883D33000E5E378 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		D66426661883D33000E5E378 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		D66426681883E8CA00E5E378 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		D66426691883EA1800E5E378 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				D63FAB75187FE4240037411F /* Frameworks */,
 				D63FAB74187FE4240037411F /* Products */,
 				D66426681883E8CA00E5E378 /* README.md */,
+				D66426691883EA1800E5E378 /* LICENSE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,6 +279,7 @@
 			files = (
 				D63FAB81187FE4240037411F /* InfoPlist.strings in Resources */,
 				D63FABB0187FE5B30037411F /* Localizable.strings in Resources */,
+				D664266A1883EA1800E5E378 /* LICENSE in Resources */,
 				D63FAB89187FE4240037411F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
