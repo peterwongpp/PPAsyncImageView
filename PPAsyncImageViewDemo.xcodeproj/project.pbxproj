@@ -71,6 +71,7 @@
 		D66426631883C80A00E5E378 /* PPImageDataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPImageDataDownloader.m; sourceTree = "<group>"; };
 		D66426651883D33000E5E378 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		D66426661883D33000E5E378 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		D66426681883E8CA00E5E378 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 				D63FAB95187FE4250037411F /* PPAsyncImageViewDemoTests */,
 				D63FAB75187FE4240037411F /* Frameworks */,
 				D63FAB74187FE4240037411F /* Products */,
+				D66426681883E8CA00E5E378 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
