@@ -7,13 +7,21 @@
 //
 
 #import "PPAppDelegate.h"
+#import "PPViewController.h"
 
 @implementation PPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    PPViewController *rootViewController = [[PPViewController alloc] init];
+    [rootViewController setTitle:NSLocalizedString(@"Root-Title", nil)];
+    
+    UINavigationController *rootNavigationController = [[UINavigationController alloc] initWithRootViewController:rootViewController];
+    
+    [self.window setRootViewController:rootNavigationController];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

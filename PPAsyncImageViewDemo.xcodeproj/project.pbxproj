@@ -20,6 +20,11 @@
 		D63FAB9A187FE4250037411F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D63FAB98187FE4250037411F /* InfoPlist.strings */; };
 		D63FAB9C187FE4250037411F /* PPAsyncImageViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D63FAB9B187FE4250037411F /* PPAsyncImageViewDemoTests.m */; };
 		D63FABA8187FE4710037411F /* PPAsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D63FABA7187FE4710037411F /* PPAsyncImageView.m */; };
+		D63FABAB187FE4990037411F /* PPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63FABAA187FE4990037411F /* PPViewController.m */; };
+		D63FABB0187FE5B30037411F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D63FABAE187FE5B30037411F /* Localizable.strings */; };
+		D664265A18839A6A00E5E378 /* PPImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = D664265918839A6A00E5E378 /* PPImageLoader.m */; };
+		D66426641883C80A00E5E378 /* PPImageDataDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D66426631883C80A00E5E378 /* PPImageDataDownloader.m */; };
+		D66426671883D33000E5E378 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D66426661883D33000E5E378 /* NSString+MD5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,21 @@
 		D63FAB9B187FE4250037411F /* PPAsyncImageViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPAsyncImageViewDemoTests.m; sourceTree = "<group>"; };
 		D63FABA6187FE4710037411F /* PPAsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAsyncImageView.h; sourceTree = "<group>"; };
 		D63FABA7187FE4710037411F /* PPAsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPAsyncImageView.m; sourceTree = "<group>"; };
+		D63FABA9187FE4990037411F /* PPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPViewController.h; sourceTree = "<group>"; };
+		D63FABAA187FE4990037411F /* PPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPViewController.m; sourceTree = "<group>"; };
+		D63FABAF187FE5B30037411F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D63FABB2187FE5FD0037411F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		D63FABB3187FE5FD0037411F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D63FABB4187FE5FD0037411F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		D63FABB5187FE6020037411F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D63FABB6187FE6020037411F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D63FABB7187FE6020037411F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D664265818839A6A00E5E378 /* PPImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPImageLoader.h; sourceTree = "<group>"; };
+		D664265918839A6A00E5E378 /* PPImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPImageLoader.m; sourceTree = "<group>"; };
+		D66426621883C80A00E5E378 /* PPImageDataDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPImageDataDownloader.h; sourceTree = "<group>"; };
+		D66426631883C80A00E5E378 /* PPImageDataDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPImageDataDownloader.m; sourceTree = "<group>"; };
+		D66426651883D33000E5E378 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		D66426661883D33000E5E378 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +133,10 @@
 			children = (
 				D63FAB85187FE4240037411F /* PPAppDelegate.h */,
 				D63FAB86187FE4240037411F /* PPAppDelegate.m */,
+				D63FABA9187FE4990037411F /* PPViewController.h */,
+				D63FABAA187FE4990037411F /* PPViewController.m */,
 				D63FAB88187FE4240037411F /* Images.xcassets */,
+				D63FABAE187FE5B30037411F /* Localizable.strings */,
 				D63FAB7D187FE4240037411F /* Supporting Files */,
 			);
 			path = PPAsyncImageViewDemo;
@@ -151,10 +174,24 @@
 		D63FABA5187FE4530037411F /* PPAsyncImageView */ = {
 			isa = PBXGroup;
 			children = (
+				D66426611883C21500E5E378 /* Helpers */,
 				D63FABA6187FE4710037411F /* PPAsyncImageView.h */,
 				D63FABA7187FE4710037411F /* PPAsyncImageView.m */,
 			);
 			path = PPAsyncImageView;
+			sourceTree = "<group>";
+		};
+		D66426611883C21500E5E378 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D664265818839A6A00E5E378 /* PPImageLoader.h */,
+				D664265918839A6A00E5E378 /* PPImageLoader.m */,
+				D66426621883C80A00E5E378 /* PPImageDataDownloader.h */,
+				D66426631883C80A00E5E378 /* PPImageDataDownloader.m */,
+				D66426651883D33000E5E378 /* NSString+MD5.h */,
+				D66426661883D33000E5E378 /* NSString+MD5.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +253,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant",
+				ja,
 			);
 			mainGroup = D63FAB6A187FE4240037411F;
 			productRefGroup = D63FAB74187FE4240037411F /* Products */;
@@ -234,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63FAB81187FE4240037411F /* InfoPlist.strings in Resources */,
+				D63FABB0187FE5B30037411F /* Localizable.strings in Resources */,
 				D63FAB89187FE4240037411F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,9 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63FABAB187FE4990037411F /* PPViewController.m in Sources */,
+				D664265A18839A6A00E5E378 /* PPImageLoader.m in Sources */,
 				D63FAB87187FE4240037411F /* PPAppDelegate.m in Sources */,
+				D66426641883C80A00E5E378 /* PPImageDataDownloader.m in Sources */,
 				D63FAB83187FE4240037411F /* main.m in Sources */,
 				D63FABA8187FE4710037411F /* PPAsyncImageView.m in Sources */,
+				D66426671883D33000E5E378 /* NSString+MD5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +326,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				D63FAB80187FE4240037411F /* en */,
+				D63FABB3187FE5FD0037411F /* zh-Hant */,
+				D63FABB6187FE6020037411F /* ja */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -290,8 +336,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				D63FAB99187FE4250037411F /* en */,
+				D63FABB4187FE5FD0037411F /* zh-Hant */,
+				D63FABB7187FE6020037411F /* ja */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D63FABAE187FE5B30037411F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D63FABAF187FE5B30037411F /* en */,
+				D63FABB2187FE5FD0037411F /* zh-Hant */,
+				D63FABB5187FE6020037411F /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
