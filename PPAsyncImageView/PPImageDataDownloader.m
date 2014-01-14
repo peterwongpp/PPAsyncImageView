@@ -22,7 +22,6 @@
 
 + (void)loadWithURL:(NSURL *)url completionHandler:(void (^)(NSData *))completionHandler
 {
-    NSLog(@"Loading url %@", url);
     (void) [[PPImageDataDownloader alloc] initWithURL:url completionHandler:completionHandler];
 }
 
