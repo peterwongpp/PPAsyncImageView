@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Peter Wong" => "peter@peterwongpp.com" }
 
+  s.platform     = :ios, '6.0'
   s.source       = { :git => "https://github.com/peterwongpp/PPAsyncImageView.git", :tag => "v#{s.version}" }
   s.source_files  = 'PPAsyncImageView', 'PPAsyncImageView/**/*.{h,m}'
   s.requires_arc = true
