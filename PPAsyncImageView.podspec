@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PPAsyncImageView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
 
   s.summary      = "A subclass of UIImageView which loads image from URL asynchronously, with activity indicator on top."
   s.description  = <<-DESC
