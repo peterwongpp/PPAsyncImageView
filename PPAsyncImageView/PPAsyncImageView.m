@@ -123,20 +123,19 @@ NSString *PPAsyncImageViewUserInfoKeyDiscarded  = @"PPAsyncImageViewUserInfoKeyD
 
 - (void)postWillLoadNotificationWithImageName:(NSString *)imageName
 {
-    NSDictionary *userInfo = @{
-                               PPAsyncImageViewUserInfoKeyImageName: imageName
-                               };
+    NSDictionary *userInfo = @{ PPAsyncImageViewUserInfoKeyImageName: imageName };
     
     [[NSNotificationCenter defaultCenter] postNotificationName:PPAsyncImageViewWillLoadImageNotification object:self userInfo:userInfo];
 }
 
 - (void)postDidLoadNotificationWithImageName:(NSString *)imageName image:(UIImage *)image discarded:(BOOL)discarded
 {
-    NSDictionary *userInfo = @{
-                               PPAsyncImageViewUserInfoKeyImageName: imageName,
-                               PPAsyncImageViewUserInfoKeyImage: (image ? image : [NSNull null]),
-                               PPAsyncImageViewUserInfoKeyDiscarded: @(discarded)
-                               };
+    NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
+    userInfo[PPAsyncImageViewUserInfoKeyImageName] = imageName;
+    if (image) {
+        userInfo[PPAsyncImageViewUserInfoKeyImage] = image;
+    }
+    userInfo[PPAsyncImageViewUserInfoKeyDiscarded] = @(discarded);
     
     [[NSNotificationCenter defaultCenter] postNotificationName:PPAsyncImageViewDidLoadImageNotification object:self userInfo:userInfo];
 }

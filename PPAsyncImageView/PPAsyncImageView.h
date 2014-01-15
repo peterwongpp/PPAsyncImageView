@@ -19,7 +19,7 @@ extern NSString *PPAsyncImageViewWillLoadImageNotification;
 /**
     Posted when the image view finished loading the image.
 
-    This notification contains @c userInfo. The @c userInfo contains the key @c PPAsyncImageViewUserInfoKeyImageName for the image name that is just downloaded, @c PPAsyncImageViewUserInfoKeyImage for the image downloaded, and @c PPAsyncImageViewUserInfoKeyDiscarded indicating if this image should be discarded or not.
+    This notification contains @c userInfo. The @c userInfo contains the key @c PPAsyncImageViewUserInfoKeyImageName for the image name that is just downloaded, @c PPAsyncImageViewUserInfoKeyImage for the image downloaded (optional), and @c PPAsyncImageViewUserInfoKeyDiscarded indicating if this image should be discarded or not.
 
     The image is considered discarded when, during the loading of an image, a new image name is given and causes another @c PPAsyncImageViewWillLoadImageNotification, then when the old image is loaded, the notification would have discarded be set to @c YES. And later the newly set image is loaded, the second @c PPAsyncImageViewDidLoadImageNotification will be posted with discarded set to @c NO.
  
