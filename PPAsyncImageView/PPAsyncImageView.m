@@ -46,6 +46,7 @@
     [super setImage:image];
     
     [self setIsImageLoaded:YES];
+    [self.activityIndicatorView stopAnimating];
 }
 
 - (void)setImageName:(NSString *)imageName
