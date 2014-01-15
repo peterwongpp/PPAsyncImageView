@@ -17,6 +17,7 @@ extern NSString *PPAsyncImageViewUserInfoKeyDiscarded;
 @interface PPAsyncImageView : UIImageView
 
 @property (nonatomic, assign, readonly) BOOL isImageLoading;
+@property (nonatomic, assign, readonly) BOOL isImageLoaded;
 
 // imageName can be either a local file name or an URL
 @property (nonatomic, strong) NSString *imageName;
