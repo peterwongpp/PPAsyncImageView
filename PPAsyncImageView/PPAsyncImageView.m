@@ -72,7 +72,7 @@
 
 - (void)start
 {
-    if (self.isImageLoaded) {
+    if (self.isImageLoading || self.isImageLoaded) {
         return;
     }
     
