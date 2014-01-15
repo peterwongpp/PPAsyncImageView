@@ -11,6 +11,9 @@
 extern NSString *PPAsyncImageViewWillLoadImageNotification;
 extern NSString *PPAsyncImageViewDidLoadImageNotification;
 
+extern NSString *PPAsyncImageViewUserInfoKeyImageName;
+extern NSString *PPAsyncImageViewUserInfoKeyImage;
+extern NSString *PPAsyncImageViewUserInfoKeyDiscarded;
 @interface PPAsyncImageView : UIImageView
 
 @property (nonatomic, assign, readonly) BOOL isImageLoading;
