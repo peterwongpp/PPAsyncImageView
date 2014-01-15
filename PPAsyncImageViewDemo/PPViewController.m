@@ -52,6 +52,13 @@
         [imageView setTag:kAsyncImageViewTag];
         [self.imageViews addObject:imageView];
     }
+    
+    // Special case for setting imageName to nil.
+    PPAsyncImageView *imageView = [[PPAsyncImageView alloc] initWithFrame:(CGRect){0, 0, 44, 44}];
+    [imageView setContentMode:UIViewContentModeScaleAspectFit];
+    [imageView setImageName:nil loadImmediately:NO];
+    [imageView setTag:kAsyncImageViewTag];
+    [self.imageViews addObject:imageView];
 }
 
 - (void)viewWillAppear:(BOOL)animated

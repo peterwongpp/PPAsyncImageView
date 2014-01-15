@@ -58,9 +58,9 @@ NSString *PPAsyncImageViewUserInfoKeyDiscarded  = @"PPAsyncImageViewUserInfoKeyD
 
 - (void)setImage:(UIImage *)image
 {
-    [super setImage:image];
-    
     [self setIsImageLoaded:YES];
+    [self setLoadingImageName:nil];
+    [super setImage:image];
     [self.activityIndicatorView stopAnimating];
 }
 
@@ -83,6 +83,11 @@ NSString *PPAsyncImageViewUserInfoKeyDiscarded  = @"PPAsyncImageViewUserInfoKeyD
 - (void)start
 {
     if (self.isImageLoading || self.isImageLoaded) {
+        return;
+    }
+    
+    if (!self.imageName) {
+        [self setImage:nil];
         return;
     }
     
@@ -129,7 +134,7 @@ NSString *PPAsyncImageViewUserInfoKeyDiscarded  = @"PPAsyncImageViewUserInfoKeyD
 {
     NSDictionary *userInfo = @{
                                PPAsyncImageViewUserInfoKeyImageName: imageName,
-                               PPAsyncImageViewUserInfoKeyImage: image,
+                               PPAsyncImageViewUserInfoKeyImage: (image ? image : [NSNull null]),
                                PPAsyncImageViewUserInfoKeyDiscarded: @(discarded)
                                };
     
