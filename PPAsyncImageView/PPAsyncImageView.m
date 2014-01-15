@@ -41,6 +41,11 @@
     [self.activityIndicatorView setCenter:[self center]];
 }
 
+- (BOOL)isImageLoading
+{
+    return [self.activityIndicatorView isAnimating];
+}
+
 - (void)setImage:(UIImage *)image
 {
     [super setImage:image];
