@@ -3,6 +3,41 @@ PPAsyncImageView
 
 A subclass of UIImageView which loads image from URL asynchronously, with activity indicator on top.
 
+Installation
+------------
+
+### Cocoapods
+
+If you are not using cocoapods yet, you may know more at [here](http://cocoapods.org).
+
+If you have already installed, you should have a `Podfile` file at your project's root directory.
+
+Edit it with your favourite text editor to add the following line to the bottom of the Podfile:
+
+    pod 'PPAsyncImageView', '~> 0.0'
+
+Since the versioning is using [Semantic Versioning](http://semver.org), you are safe to use `~>` for backward-compatible changes.
+
+Now you can install the dependencies from your command line:
+
+    $ pod install
+
+Finally, in the file you want to use the `PPAsyncImageView`, add the following import statement:
+
+    #inport "PPAsyncImageView.h"
+
+### Manual
+
+Just copy all the classes from the `/PPAsyncImageView` directory to your project, then add the following to import:
+
+    #inport "PPAsyncImageView.h"
+
+Contribution
+------------
+
+- Fork, update and send pull request.
+- Leave any comments, improvements, suggestions, ideas etc at to [Issues](https://github.com/peterwongpp/PPAsyncImageView/issues).
+
 License
 -------
 
